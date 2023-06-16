@@ -1,5 +1,8 @@
 from pygame import *
-
+mixer.init()
+mixer.music.load('music.mp3')
+mixer.music.play(-1)
+mouse=mixer.Sound('mouse.wav')
 
 class GameSprite(sprite.Sprite):
     def __init__(self,player_image,player_x, player_y, size_x, size_y):
